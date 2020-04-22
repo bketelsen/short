@@ -7,7 +7,6 @@ async function handleRequest(request) {
   uri = url.pathname.replace(/^\/|\/$/g, '');
   const value = await SHORT_KV.get(uri)
   if (value === null) {
-    pages/not-found
     return new Response('', {
       status: Number(301),
       headers: {

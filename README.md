@@ -15,3 +15,6 @@ wrangler generate projectname https://github.com/cloudflare/worker-template
 #### Serverless
 
 To deploy using serverless add a [`serverless.yml`](https://serverless.com/framework/docs/providers/cloudflare/) file.
+
+
+wrangler kv:key put --binding=SHORT_KV "key" "value"
